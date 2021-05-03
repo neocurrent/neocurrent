@@ -37,6 +37,6 @@ void puan(float midterm, float final)
 	if(average>= 45) 
 	cout<<endl<<"  You pass";
 	else 
-	cout<<endl<<"  You fail";
+	cout<<endl<<"  You fail ";
  	return 0;
  }
