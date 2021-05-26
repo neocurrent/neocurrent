@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+int a = 1,sum = 0;
+void liste(int x){
+	int kg,tomato=2,banana=15,potato=12,carrot=3,orange=4,cherry=8,grape=1,apple=10;
+	cout<<" How many kg do you want: "; cin>>kg;
+	if     (x == 1) sum += tomato*kg;
+	else if(x == 2) sum += banana*kg;
+	else if(x == 3) sum += potato*kg;
+	else if(x == 4) sum += carrot*kg;
+	else if(x == 5) sum += orange*kg;
+	else if(x == 6) sum += cherry*kg;
+	else if(x == 7) sum +=  grape*kg;
+	else if(x == 8) sum +=  apple*kg;
+	cout<<" Total cost: "<< sum<<endl;
+	a++;
+}
+int main(){
+	cout<<"<<< WELCOME TO TYGR GREENGROCER >>>"<<endl;
+	cout<<"    _ _ _ _ _ _ _ _ _ _ _ _ _ _"<<endl;
+	cout<<"   |number| fruit     | cost   |"<<endl;
+	cout<<"   |_ _ _ |_ _ _ _ _ _|_ _ _ _ |"<<endl;
+	cout<<"   |  1   | tomato    | 2 TL   |"<<endl;
+	cout<<"   |_ _ _ |_ _ _ _ _ _|_ _ _ _ |"<<endl;
+	cout<<"   |  2   | banana    | 15 TL  |"<<endl;
+	cout<<"   |_ _ _ |_ _ _ _ _ _|_ _ _ _ |"<<endl;
+	cout<<"   |  3   | potato    | 12 TL  |"<<endl;
+	cout<<"   |_ _ _ |_ _ _ _ _ _|_ _ _ _ |"<<endl;
+	cout<<"   |  4   | carrot    | 3 TL   |"<<endl;
+	cout<<"   |_ _ _ |_ _ _ _ _ _|_ _ _ _ |"<<endl;
+	cout<<"   |  5   | orange    | 4 TL   |"<<endl;
+	cout<<"   |------|-----------|--------|"<<endl;
+	cout<<"   |  6   | cherry    | 8 TL   |"<<endl;
+	cout<<"   |------|-----------|--------|"<<endl;
+	cout<<"   |  7   | grape     | 1 TL   |"<<endl;
+	cout<<"   |------|-----------|--------|"<<endl;
+	cout<<"   |  8   | apple     | 10 TL  |"<<endl;
+	cout<<"   |------|-----------|--------|"<<endl;
+	int i,y=2,go=1;
+	while(go == 1){
+		if(0<y && y<9)
+		{
+		cout<<" Enter food number: "; 
+		cin>>y;
+		liste(y);
+		cout<<" Enter 1 if you want to continue shopping, or 0 if you don't: ";
+		cin>>go;
+	    }
+	    else{
+	    cout<<" Entered wrong number please try again";
+	    return 0;
+		}
+	}
+	cout<<" Thanks for choosing us ";
+	return 0;
+}
